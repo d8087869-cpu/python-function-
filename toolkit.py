@@ -74,7 +74,6 @@ show_all('radio', 'map' , 'flashligth')
 #2 
 def show_profile(**kwargs):
     print(kwargs)
-
 show_profile(name="Agent X", level=7, active=True)
 
 
