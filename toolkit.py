@@ -1,6 +1,6 @@
 # part 1
 #1 
-'''
+
 def greet(name):
     print('hello' ,name )
 greet('agent x ')    
@@ -29,9 +29,9 @@ def multiply(a, b=2):
     print(a*b)
 multiply(7)
 multiply(9,9)   
-'''
+
 #7
-'''
+
 def print_largest(a, b, c):
     if a >= b :
         if a>=c :
@@ -63,7 +63,7 @@ def summarize(items):
     print('min' , min(items))
     print('max', max(items))
 summarize([4, 9, 2, 10, 3])    
-#part 2'''
+#part 2
 
 #1
 def show_all(*args):
@@ -78,7 +78,7 @@ show_profile(name="Agent X", level=7, active=True)
 
 
 
-'''
+
 #3
 def power(base, exponent=2):
     print(base**exponent)
@@ -98,4 +98,3 @@ def flatten_and_print(matrix):
             print(cell)
 x =[[1, 2], [3, 4], [5]]    
 flatten_and_print(x)
-'''
