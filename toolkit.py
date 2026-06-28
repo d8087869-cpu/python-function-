@@ -47,4 +47,4 @@ def show_fahrenheit(c):
     print((c * 9 / 5) + 32)
 show_fahrenheit(0)
 show_fahrenheit(100)
-show_fahrenheit(37.5)    
+show_fahrenheit(367.5)    
