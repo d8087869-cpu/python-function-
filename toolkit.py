@@ -62,4 +62,10 @@ def summarize(items):
     print('min' , min(items))
     print('max', max(items))
 summarize([4, 9, 2, 10, 3])    
-        
+#part 2
+#3
+def power(base, exponent=2):
+    print(base**exponent)
+power(3)
+power(3,3)
+power(exponent=4 , base=2)    
