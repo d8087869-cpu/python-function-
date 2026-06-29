@@ -46,5 +46,13 @@
 #1 = we printed  the global 
 #key,map,coin will show evry print becous in list the print points to all val that in the list . 
 
-#part 3
-
+#part 2
+#1 
+def meters_to_centimeters(meters):
+    return meters * 100 
+def report_distance(centimeters):
+    return f"robot moved{centimeters} centimeters"
+distance_in_meters = 2.5 
+centimeters_val = meters_to_centimeters(distance_in_meters)
+message = report_distance(centimeters_val)
+print(message)
