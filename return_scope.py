@@ -23,4 +23,28 @@
 #['map', 'key', 'torch', 'coin'] - when printed the items from global it points all the val that are exciting and add in to the list
 
 #6 
-#
+#potion,shild = in the func you replaced the vals to potion . and then add by append added shild
+#map , key = printed from global items = map and key 
+
+#7 
+#20 = in local you over rite the globl to a new vals 3+=10 and thed you multiply by 2 
+#20 = vals in global no more exists becouse you overite the previos vals 
+
+#8
+#runing = even do its in the second func we printed it first by the first opretion of the second func 
+#ready = noe out of the line of func we activet tjhe func and the val of status in fun is radey 
+#waiting = we print the global val 
+
+#9 
+#16 =in second func we toke the val of first of func = 5 , and added 5+3=8 and multiply by 2 , and prints ,
+#16 =  after we active the func and printed agian coins under the second func so will give the same result becose coins got a new valuy
+#10 = printed the global val
+
+#10 
+#25= I take the val of firest 10 and i go to the inner abd there befoer was activeted we change it agin to 10*2=20 , 20+5 -and thes result is the new val for the outer func and also to the inner func . 
+#25 = the new val from the inner becouse we used the  nonlocal and wiil print 25 
+#1 = we printed  the global 
+#key,map,coin will show evry print becous in list the print points to all val that in the list . 
+
+#part 3
+
