@@ -48,6 +48,7 @@
 
 #part 2
 #1 
+''''
 def meters_to_centimeters(meters):
     return meters * 100 
 def report_distance(centimeters):
@@ -55,4 +56,25 @@ def report_distance(centimeters):
 distance_in_meters = 2.5 
 centimeters_val = meters_to_centimeters(distance_in_meters)
 message = report_distance(centimeters_val)
-print(message)
+print(message)'''
+
+#2
+def add_delivary(price):
+    return price + 10 
+def double_price(new_price):
+    return new_price * 2
+iteam_price = 50
+final_price = double_price(add_delivary(iteam_price))
+print(final_price)
+
+#3
+def clinte_name(first, last):
+    return first + last
+
+def caps_name(name):
+    return name.upper()
+
+first_name = 'david'
+last_name = 'kalaora'
+final_name = caps_name(clinte_name(first_name , last_name))
+print(final_name)
