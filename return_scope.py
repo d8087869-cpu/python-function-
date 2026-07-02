@@ -124,3 +124,34 @@ def valid_pass(length):
 password = " mypassword "
 result = valid_pass(password_length(clean_password(password)))
 print(result)
+#8
+def bonus_grade(grade):
+    return grade +5
+def multi_grade(new_grade):
+    return new_grade * 1.1
+def final_grade(result):
+    return min(result , 100)
+grade = 85
+final = final_grade(multi_grade(bonus_grade(grade)))
+print(final)
+#9
+def sen_lower(sentence):
+    return sentence.lower()
+def count_a(lower_sen):
+    return lower_sen.count('a')
+def message(count):
+    return f"The letter a appears {count} times."
+sentence= 'a tiger and a dog and a lion and egal are my favorit '
+result = message(count_a(sen_lower(sentence)))
+print(result)
+#10
+def tatal_value(price,amount):
+    return price*amount
+def subtrac_storage(total):
+    return total - 15
+def werth_the_monye(new_val):
+    return new_val > 100
+price = 25
+amount = 5
+result= werth_the_monye(subtrac_storage(tatal_value(price,amount)))
+print(result)
