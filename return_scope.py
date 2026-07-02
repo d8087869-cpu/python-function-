@@ -78,3 +78,25 @@ first_name = 'david'
 last_name = 'kalaora'
 final_name = caps_name(clinte_name(first_name , last_name))
 print(final_name)
+
+#4
+def cel_to_fahr(celsius):
+    return (celsius * 9/5) +32 
+def temp(fahr):
+    return f'the temp is {fahr}*f'
+report = temp(cel_to_fahr(25))
+print(report)
+
+#5
+def apply_damage(starting_health, damage):
+    return starting_health - damage
+
+
+def apply_healing(damaged_health, healing):
+    return damaged_health + healing
+starting_health = 100
+damage = 30
+healing = 20
+
+final_health = apply_healing(apply_damage(starting_health, damage), healing)
+print(final_health)
