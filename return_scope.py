@@ -58,6 +58,7 @@ centimeters_val = meters_to_centimeters(distance_in_meters)
 message = report_distance(centimeters_val)
 print(message)'''
 
+'''
 #2
 def add_delivary(price):
     return price + 10 
@@ -100,3 +101,26 @@ healing = 20
 
 final_health = apply_healing(apply_damage(starting_health, damage), healing)
 print(final_health)
+#6 
+def total_price(p1, p2, p3):
+    return p1+p2+p3 
+def discount(total):
+    return total * 0.8
+def final_price(discount_price):
+    return f'the final price {discount_price} '
+price1=10
+price2=20
+price3=30
+message = final_price(discount(total_price(price1,price2,price3)))
+print(message)
+'''
+#7
+def clean_password(password):
+    return password.strip()
+def password_length(cleaned_password):
+    return len(cleaned_password)
+def valid_pass(length):
+    return length>=8
+password = " mypassword "
+result = valid_pass(password_length(clean_password(password)))
+print(result)
