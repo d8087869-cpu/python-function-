@@ -114,6 +114,8 @@ price3=30
 message = final_price(discount(total_price(price1,price2,price3)))
 print(message)
 '''
+
+'''
 #7
 def clean_password(password):
     return password.strip()
@@ -155,3 +157,61 @@ price = 25
 amount = 5
 result= werth_the_monye(subtrac_storage(tatal_value(price,amount)))
 print(result)
+'''
+#11
+
+def first_part(first_name):
+    return first_name[:3]
+def last_part(last_name):
+    return last_name[:3]
+def join_parts(part1, part2):
+    return part1 + "_" + part2
+def to_lowercase(username):
+    return username.lower()
+first_name = "David"
+last_name = "kalaora"
+final_username = to_lowercase(join_parts(first_part(first_name), last_part(last_name)))
+print(final_username)
+
+#12
+def total_fuel(distance, fuel_per_km):
+    return distance * fuel_per_km
+def fuel_cost(total_fuel, price_per_liter):
+    return total_fuel * price_per_liter
+def cost_per_passenger(total_cost, passengers):
+    return total_cost / passengers
+distance = 150
+fuel_per_km = 2.5
+price_per_liter = 7
+passengers = 3
+
+final_cost = cost_per_passenger(fuel_cost(total_fuel(distance, fuel_per_km), price_per_liter), passengers)
+print(final_cost)
+
+#13
+def sum_scores(scores):
+    return sum(scores)
+def average_score(total, count):
+    return total / count
+def result(average):
+    return "pass" if average >= 60 else "fail"
+scores = [70, 80, 50, 90]
+final_result = result(average_score(sum_scores(scores), len(scores)))
+print(final_result)
+
+#14
+def short_sentence(product, amount):
+    return f"{amount} {product}s"
+def long_sentence(sentence, price_per_item, amount):
+    total_price = price_per_item * amount
+    return f"{sentence} for {total_price} shekels"
+def ready_order(long_sentence):
+    return long_sentence + " - order ready"
+
+
+product = "keyboard"
+amount = 3
+price_per_item = 100
+
+final_sentence = ready_order(long_sentence(short_sentence(product, amount), price_per_item, amount))
+print(final_sentence)
