@@ -239,3 +239,15 @@ price = 100
 amount = 3
 final_recepit = recepit(add_tax(subtotal(price,amount)))
 print(final_recepit)
+
+#17
+bonus = 10
+def base_score(wins):
+    return wins *10
+def add_bonus(score):
+    return score + bonus
+def level(score):
+    return 'advenced' if  score >= 50 else 'training'
+wins = 8
+final_result = level(add_bonus(base_score(wins)))
+print(final_result)
