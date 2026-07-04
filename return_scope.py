@@ -207,8 +207,6 @@ def long_sentence(sentence, price_per_item, amount):
     return f"{sentence} for {total_price} shekels"
 def ready_order(long_sentence):
     return long_sentence + " - order ready"
-
-
 product = "keyboard"
 amount = 3
 price_per_item = 100
