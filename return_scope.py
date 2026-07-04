@@ -213,3 +213,29 @@ price_per_item = 100
 
 final_sentence = ready_order(long_sentence(short_sentence(product, amount), price_per_item, amount))
 print(final_sentence)
+
+#15
+def deposit(balance , amount):
+    return balance + amount
+def withdraw (balance , amount):
+    return balance - amount
+def check_balance(final_balance):
+    return 'ok' if final_balance >= 0 else 'worning'
+balance =100 
+deposit_amount= 50
+withdraw_amount=150
+result = check_balance(withdraw(deposit(balance,deposit_amount),withdraw_amount))
+print(result)
+
+#16
+tax_rate = 0.17 
+def subtotal(price , amount):
+    return price * amount
+def add_tax(subtotal_val):
+    return subtotal_val * (1+tax_rate)
+def recepit(final_price):
+    return f'final price after tax: {final_price:.2f}shekel'
+price = 100
+amount = 3
+final_recepit = recepit(add_tax(subtotal(price,amount)))
+print(final_recepit)
